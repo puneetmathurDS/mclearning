@@ -8,7 +8,7 @@ echo %dd%
 echo %mm%
 echo %yyyy%
 echo %todaysdate%
-SET todaysdate=%todaysdate%".txt"
+SET todaysdate=%datetimef%".txt"
 type nul > %todaysdate%
 date /t >> %todaysdate%
 date /t >> %todaysdate%
