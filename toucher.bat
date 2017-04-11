@@ -12,5 +12,5 @@ date /t >> %todaysdate%
 date /t >> %todaysdate%
 date /t >> %todaysdate%
 git add .
-git commit -m %todaysdate%
+git commit -m "chore: updating build tasks, package manager configs, ; no production code change Change made on: "%todaysdate%
 git push -f origin master
