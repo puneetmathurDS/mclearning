@@ -13,4 +13,4 @@ date /t >> %todaysdate%
 date /t >> %todaysdate%
 git add .
 git commit -m %todaysdate%
-git push origin master
+git push -f origin master
