@@ -2,12 +2,33 @@
 ## Specializations
 ## Project: Capstone Proposal and Capstone Project
 
-**Note**
+The following Python version 2.7 standard libraries have been used in the project.
+from sklearn.preprocessing import MinMaxScaler
+import numpy as np
+import pandas as pd
+from time import time
+from IPython.display import display # Allows the use of display() for DataFrames
+import warnings
+warnings.filterwarnings("ignore", category = UserWarning, module = "matplotlib")
+from IPython import get_ipython
+get_ipython().run_line_magic('matplotlib', 'inline')
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import numpy as np
+import pandas as pd
+from time import time
+from sklearn.metrics import f1_score, accuracy_score
 
-The Capstone is a two-staged project. The first is the proposal component, where you can receive valuable feedback about your project idea, design, and proposed solution. This must be completed prior to your implementation and submitting for the capstone project. 
+The dataset is 1+GB csv file and can be downloaded from the following public url:
+http://www.PuneetMathur.in/fd2kfullfinal.csv
 
-You can find the [capstone proposal rubric here](https://review.udacity.com/#!/rubrics/410/view), and the [capstone project rubric here](https://review.udacity.com/#!/rubrics/108/view). Please ensure that you are following directions correctly when submitting these two stages which encapsulate your capstone.
+First run the Capstone.ipynb after downloading the csv dataset file.
+You may change the csv file path in the following Capstone.ipynb file:
 
-You will find an `open_projects` folder in these files. This will be where pre-curated capstone projects are available, should you choose to work on a project already partially designed for you. 
+data = pd.read_csv("fd2kfullfinal.csv", low_memory=False)
 
-Please email [machine-support@udacity.com](mailto:machine-support@udacity.com) if you have any questions.
+also below if it does not work for you:
+plt.savefig('exploratory.png')
+
+Rest is a simple and not extra libraries apart from the ones mentioned above should be able to run on a Python 2.7 machine.
+
